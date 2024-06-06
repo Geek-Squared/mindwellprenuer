@@ -13,9 +13,7 @@ const Section = () => {
           Transform Your Life <span className="mellania-span">Today...</span>
         </h2>
         <p className="section-text">
-          This is the text content of the section. It is placed on the right
-          side of the image and provides additional information or context to
-          complement the visual content displayed on the left.
+        Unlock the potential within yourself to create lasting change. This section is strategically positioned alongside an inspiring image, offering insightful guidance to amplify your personal growth and transformational experience.
         </p>
         <button
           className="cta-button"

@@ -1,7 +1,14 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import "./styles.scss";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <div className="navbar-container">
       <div className="navbar-content">
@@ -14,18 +21,17 @@ const Navbar = () => {
       <div className="navbar">
         <div className="navbar-bottom">
           <div className="logo">
-            <h3>Mellania</h3>
+            <h3>Mindfulwellprenuer</h3>
           </div>
-          <div className="menu">
+          <div className={`menu ${menuOpen ? "open" : ""}`}>
             <a href="/">Home</a>
-            {/* <a href="/about">About</a> */}
             <div className="dropdown">
               <a href="#" className="dropdown-toggle">
                 Work With Me
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <a href="/holistic">Hollistic Lifestyle</a>
+                  <a href="/holistic">Holistic Lifestyle</a>
                 </li>
                 <li>
                   <a href="/relationships">Relationships</a>
@@ -36,11 +42,15 @@ const Navbar = () => {
               </ul>
             </div>
             <a href="/blog">Blog</a>
-            <a href="/contact">Contact</a>
+            {/* <a href="/contact">Contact</a> */}
             <a href="/booking" className="book-now">
-              Book Now
+              Schedule Your Free Booking
             </a>
-            {/* <HeaderButton text="Book Now" onClick={() => null}/> */}
+          </div>
+          <div className="hamburger" onClick={toggleMenu}>
+            <div className="bar"></div>
+            <div className="bar"></div>
+            <div className="bar"></div>
           </div>
         </div>
       </div>

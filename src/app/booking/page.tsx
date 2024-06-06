@@ -37,7 +37,9 @@ export default function Page() {
   });
 
   return (
-    <div>
+    <div style={{
+      marginTop: "50px",
+    }}>
       <Calendar />
       {/* <form
         onSubmit={formik.handleSubmit}

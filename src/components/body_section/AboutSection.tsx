@@ -1,11 +1,21 @@
 import React from 'react';
 import './styles.scss';
+import Image from "next/image"
 
 const AboutSection = () => {
   return (
     <div className="about-section-container">
-      <h2 className="about-section-title">About <span className="mellania-span">Mindfulwellprenuer...</span></h2>
+      <div className='about-section-image-container'>
+        <Image
+         src="/about.jpeg"
+         alt="Relationship"
+         width={400}
+         height={700}
+         className='about-section-image'
+        />
+      </div>
       <div className="about-section-content">
+      <h2 className="about-section-title">About <span className="mellania-span">Mindfulwellprenuer...</span></h2>
         <p>
           Hi, I’m Mellania – a dedicated life coach, committed to guiding my clients through transformative journeys. I offer personalized one-on-one sessions with individuals, as well as consultations with industry-leading companies and brands.
         </p>
@@ -18,9 +28,9 @@ const AboutSection = () => {
         <p>
           <strong>My Mission:</strong> To assist you in living authentically, comfortably, safely, and with ease. You can train your mind to create the life you desire – all you need are the right tools. I provide these tools through a powerful, proven framework for personal development. Picture yourself finding solutions to your challenges and having both the mindset and practical strategies to navigate your path to success, supported by accountability to ensure you reach your goals. That’s what my coaching offers.
         </p>
-        <p>
+        {/* <p>
           <strong>My Services:</strong> My focus is on holistic lifestyle, wellness, and relationships. I aim to enhance your overall well-being, foster healthy relationships, and promote a balanced, fulfilling life.
-        </p>
+        </p> */}
       </div>
     </div>
   );
