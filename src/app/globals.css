@@ -83,23 +83,73 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  font-family: Montserrat, serif;
+  color: #5c5f5d !important;
+  background-color: #FFF;
 }
 
+p{
+  font-family: Montserrat, serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #666;
+  text-align: left;
+}
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  font-family: Montserrat, serif;
+  font-weight: 400 !important;
+  color: #5c5f5d !important;
 }
 
+.mellania-span {
+  font-family: Great Vibes, serif;
+  font-size: 50px;
+  color: #01B1B1;
+}
+.mellania-span-services {
+  font-family: Great Vibes, serif;
+  font-size: 50px;
+  color: #01B1B1;
+}
+
+.header-title {
+  font-family: Montserrat, serif;
+  font-size: 30px;
+  font-weight: 300;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.cta-button{
+  background-color: #01b1b11a;
+  border: none;
+  color: #888;
+  padding: 10px 32px;
+  font-weight: 100 !important;
+  font-family: Playfair Display, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.service-span{
+  font-style: italic;
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

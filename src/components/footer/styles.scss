@@ -1,0 +1,38 @@
+.footer-container {
+  padding: 20px !important;
+  text-align: center !important;
+}
+
+.footer-content {
+  display: flex !important;
+  justify-content: space-around !important;
+  margin-bottom: 20px !important;
+}
+
+.footer-section {
+  display: flex !important;
+  flex-direction: column !important;
+  text-align: left !important;
+  margin: 0 10px !important;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  color: #666;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}

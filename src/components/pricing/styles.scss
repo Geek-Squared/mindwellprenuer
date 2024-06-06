@@ -1,0 +1,37 @@
+.pricing-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.pricing-section {
+  flex: 0 1 300px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  border-radius: 8px;
+}
+
+.pricing-section h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.pricing-section p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.price {
+  font-size: 20px;
+  color: #4CAF50;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
