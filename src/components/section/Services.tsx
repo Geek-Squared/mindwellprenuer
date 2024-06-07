@@ -28,7 +28,6 @@ const CoachingServices: React.FC<ServicesProps> = ({ content }) => {
                   src={listItem.image}
                   alt={listItem.text}
                   className="service-image"
-                  style={imageSize}
                 />
                 <p className="service-title">{listItem.text}</p>
               </div>
